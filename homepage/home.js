@@ -101,44 +101,44 @@ const closeModal = document.querySelector(".close-modal");
 const modalFooter = document.querySelector(".modal-footer");
 const exitModal = document.querySelector(".exit-modal");
 const playBtn = document.querySelector(".play");
-const storeBtns = document.querySelectorAll(".storeBtns");
+// const storeBtns = document.querySelectorAll(".storeBtns");
 const footerIcons = document.querySelectorAll(".tooltip-box");
 
-const coinsMaxDisplay = document.querySelector(".coinMax-cont");
-const heartMaxDisplay = document.querySelector(".heartMax-cont");
-const coinNum = document.querySelector(".coin-num");
-const heartText = document.querySelector(".heartnum");
-console.log(heartText);
-const currentCoins = parseInt(localStorage.getItem("coinCount")) || 0;
-let currentHeartNum = parseInt(localStorage.getItem("heartNum"));
+// const coinsMaxDisplay = document.querySelector(".coinMax-cont");
+// const heartMaxDisplay = document.querySelector(".heartMax-cont");
+// const coinNum = document.querySelector(".coin-num");
+// const heartText = document.querySelector(".heartnum");
+// console.log(heartText);
+// const currentCoins = parseInt(localStorage.getItem("coinCount")) || 0;
+// let currentHeartNum = parseInt(localStorage.getItem("heartNum"));
 
-if (currentHeartNum === null || isNaN(currentHeartNum)) {
-  currentHeartNum = 5; // Set to 5 only if heartNum is not defined
-  localStorage.setItem("heartNum", currentHeartNum);
-}
+// if (currentHeartNum === null || isNaN(currentHeartNum)) {
+//   currentHeartNum = 5;
+//   localStorage.setItem("heartNum", currentHeartNum);
+// }
 
-heartText.textContent = currentHeartNum;
-localStorage.setItem("coinCount", currentCoins);
-coinNum.textContent = currentCoins;
+// heartText.textContent = currentHeartNum;
+// localStorage.setItem("coinCount", currentCoins);
+// coinNum.textContent = currentCoins;
 
-if (currentCoins >= 5000) {
-  coinsMaxDisplay.classList.add("displayMax");
-} else {
-  coinsMaxDisplay.classList.remove("displayMax");
-}
-if (currentHeartNum >= 5) {
-  heartMaxDisplay.classList.add("displayMax");
-} else {
-  heartMaxDisplay.classList.remove("displayMax");
-}
+// if (currentCoins >= 5000) {
+//   coinsMaxDisplay.classList.add("displayMax");
+// } else {
+//   coinsMaxDisplay.classList.remove("displayMax");
+// }
+// if (currentHeartNum >= 5) {
+//   heartMaxDisplay.classList.add("displayMax");
+// } else {
+//   heartMaxDisplay.classList.remove("displayMax");
+// }
 
-storeBtns.forEach((storeBtn) => {
-  storeBtn.addEventListener("click", () => {
-    setTimeout(() => {
-      window.location.href = base + "StorePage/store.html";
-    }, 200);
-  });
-});
+// storeBtns.forEach((storeBtn) => {
+//   storeBtn.addEventListener("click", () => {
+//     setTimeout(() => {
+//       window.location.href = base + "StorePage/store.html";
+//     }, 200);
+//   });
+// });
 playBtn.addEventListener("click", () => {
   setTimeout(() => {
     window.location.href = base + "Quizpage/quiz.html";
@@ -217,13 +217,3 @@ buttons.forEach((button) => {
     }
   });
 });
-
-const logo = document.querySelector(".game-logo");
-logo.addEventListener("click", () => {
-  localStorage.removeItem("oldUser");
-  localStorage.removeItem("gender");
-  localStorage.removeItem("username");
-  localStorage.removeItem("age");
-});
-
-console.log(logo);
