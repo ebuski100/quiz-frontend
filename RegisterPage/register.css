@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerHead {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.headtext {
+  color: #ebfc00;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.registerContainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 5px 5px hsla(0, 0%, 21%, 0.623);
+  /* border: 1px solid yellow; */
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(120deg, blue, purple);
+}
+.noCopy {
+  user-select: none;
+}
+.formBody {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  /* text-align: center; */
+}
+
+.registerHeader {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: blue;
+}
+label {
+  margin-bottom: 0.5rem;
+  color: blue;
+}
+
+.Username {
+  border: none;
+  padding: 1rem;
+  background-color: hsla(0, 0%, 85%, 0.788);
+  outline: none;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  /* color: blue; */
+}
+
+.buttonsCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.registerBtn {
+  border: none;
+
+  cursor: pointer;
+  margin: 1rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.notInterested {
+  background: transparent;
+  border: 1px solid blue;
+  color: blue;
+}
+.regSubmitBtn {
+  background-color: blue;
+}
+/* Style for the age select input */
+#age {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  margin-bottom: 1.2rem;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  /* color: blue; */
+  cursor: pointer;
+  font-weight: bold;
+  background-color: hsla(0, 0%, 85%, 0.788);
+}
+#age:hover,
+.Username:hover,
+/* #gender:hover, */
+.regSubmitBtn:hover,
+.notInterested:hover {
+  transform: scale(1.05);
+}
+
+.regSubmitBtn:active,
+.notInterested:active {
+  transform: scale(1.1) translateX(2px) translateY(2px);
+}
+
+@media (min-width: 768px) {
+  .registerContainer {
+    width: 60%;
+  }
+}

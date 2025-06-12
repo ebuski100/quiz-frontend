@@ -1,0 +1,138 @@
+[
+  { "id": 1, "name": "Adidas.mp4", "path": "../Ads/Adidas.mp4" },
+  { "id": 2, "name": "air_jordan.mp4", "path": "../Ads/air_jordan.mp4" },
+  { "id": 3, "name": "airpodPro.mp4", "path": "../Ads/airpodPro.mp4" },
+  { "id": 4, "name": "apple_watch.mp4", "path": "../Ads/apple_watch.mp4" },
+  {
+    "id": 5,
+    "name": "appleMacbookAir.mp4",
+    "path": "../Ads/appleMacbookAir.mp4"
+  },
+  { "id": 6, "name": "allyBanking.mp4", "path": "../Ads/allyBanking.mp4" },
+  {
+    "id": 7,
+    "name": "aramaSkinMagic.mp4",
+    "path": "../Ads/aramaSkinMagic.mp4"
+  },
+  {
+    "id": 8,
+    "name": "bludotGiftShop.mp4",
+    "path": "../Ads/bludotGiftShop.mp4"
+  },
+  { "id": 9, "name": "branding.mp4", "path": "../Ads/branding_Company.mp4" },
+  { "id": 10, "name": "burgerKing.mp4", "path": "../Ads/burgerKing.mp4" },
+  { "id": 11, "name": "coca_cola.mp4", "path": "../Ads/coca_cola.mp4" },
+  {
+    "id": 12,
+    "name": "coffeeFaceWash.mp4",
+    "path": "../Ads/coffeeFaceWash.mp4"
+  },
+  { "id": 13, "name": "coldkartFoods.mp4", "path": "../Ads/coldkartFoods.mp4" },
+  {
+    "id": 14,
+    "name": "digital_Agency.mp4",
+    "path": "../Ads/digital_Agency.mp4"
+  },
+  { "id": 15, "name": "dime_oil.mp4", "path": "../Ads/dime_oil.mp4" },
+  { "id": 16, "name": "dior.mp4", "path": "../Ads/dior.mp4" },
+  { "id": 17, "name": "Adidas.mp4", "path": "../Ads/Adidas.mp4" },
+  {
+    "id": 18,
+    "name": "everythingApple.mp4",
+    "path": "../Ads/everythingApple.mp4"
+  },
+  { "id": 19, "name": "faceSerums.mp4", "path": "../Ads/faceSerums.mp4" },
+  { "id": 20, "name": "glovo.mp4", "path": "../Ads/glovo.mp4" },
+  { "id": 21, "name": "JBL_earpod.mp4", "path": "../Ads/JBL_earpod.mp4" },
+  {
+    "id": 22,
+    "name": "hfre_properties.mp4",
+    "path": "../Ads/hfre_properties.mp4"
+  },
+  {
+    "id": 23,
+    "name": "hubblBranding.mp4",
+    "path": "../Ads/hubblBranding.mp4"
+  },
+  {
+    "id": 24,
+    "name": "imploraSunscreen.mp4",
+    "path": "../Ads/imploraSunscreen.mp4"
+  },
+  { "id": 25, "name": "iphone14pro.mp4", "path": "../Ads/iphone14pro.mp4" },
+
+  {
+    "id": 26,
+    "name": "jelfie_jewelry.mp4",
+    "path": "../Ads/jelfie_jewelry.mp4"
+  },
+  {
+    "id": 27,
+    "name": "kalibkoons_realEstate.mp4",
+    "path": "../Ads/kalibkoons_realEstate.mp4"
+  },
+  {
+    "id": 28,
+    "name": "louisViitton_Messi.mp4",
+    "path": "../Ads/louisViitton_Messi.mp4"
+  },
+  {
+    "id": 29,
+    "name": "manique_necklace.mp4",
+    "path": "../Ads/manique_necklace.mp4"
+  },
+  { "id": 30, "name": "metal_filer.mp4", "path": "../Ads/metal_filer.mp4" },
+  {
+    "id": 31,
+    "name": "neewer_cameraStand.mp4",
+    "path": "../Ads/neewer_cameraStand.mp4"
+  },
+  { "id": 32, "name": "Nescafe_Tea.mp4", "path": "../Ads/Nescafe_Tea.mp4" },
+  { "id": 33, "name": "Nike.mp4", "path": "../Ads/Nike.mp4" },
+  { "id": 34, "name": "nivea.mp4", "path": "../Ads/nivea.mp4" },
+  { "id": 35, "name": "officeChair.mp4", "path": "../Ads/officeChair.mp4" },
+  { "id": 36, "name": "PayPal.mp4", "path": "../Ads/PayPal.mp4" },
+  { "id": 37, "name": "podcast_Mic.mp4", "path": "../Ads/podcast_Mic.mp4" },
+  { "id": 38, "name": "prada.mp4", "path": "../Ads/prada.mp4" },
+  { "id": 39, "name": "puma.mp4", "path": "../Ads/puma.mp4" },
+  {
+    "id": 40,
+    "name": "rdxReloadedRestaurant.mp4",
+    "path": "../Ads/rdxReloadedRestaurant.mp4"
+  },
+  { "id": 41, "name": "redmi14C.mp4", "path": "../Ads/redmi14C.mp4" },
+  {
+    "id": 42,
+    "name": "ruthless_shirt.mp4",
+    "path": "../Ads/ruthless_shirt.mp4"
+  },
+  { "id": 43, "name": "skillShare.mp4", "path": "../Ads/skillShare.mp4" },
+  {
+    "id": 44,
+    "name": "sony_headphone.mp4",
+    "path": "../Ads/sony_headphone.mp4"
+  },
+  { "id": 45, "name": "sports_shoes.mp4", "path": "../Ads/sports_shoes.mp4" },
+  { "id": 46, "name": "squareSpace.mp4", "path": "../Ads/squareSpace.mp4" },
+  { "id": 47, "name": "starlinBank.mp4", "path": "../Ads/starlinBank.mp4" },
+  { "id": 48, "name": "subway.mp4", "path": "../Ads/subway.mp4" },
+  { "id": 49, "name": "super_drill.mp4", "path": "../Ads/super_drill.mp4" },
+  {
+    "id": 50,
+    "name": "trendhim_wristWatch.mp4",
+    "path": "../Ads/trendhim_wristWatch.mp4"
+  },
+  {
+    "id": 51,
+    "name": "vacier_menBangle.mp4",
+    "path": "../Ads/vacier_menBangle.mp4"
+  },
+  {
+    "id": 52,
+    "name": "VivianlaptopPowerbank.mp4",
+    "path": "../Ads/VivianlaptopPowerbank.mp4"
+  },
+  { "id": 53, "name": "waffleCones.mp4", "path": "../Ads/waffleCones.mp4" },
+  { "id": 54, "name": "xiaomi_ipad5.mp4", "path": "../Ads/xiaomi_ipad5.mp4" },
+  { "id": 55, "name": "zapier.mp4", "path": "../Ads/zapier.mp4" }
+]

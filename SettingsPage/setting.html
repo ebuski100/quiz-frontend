@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting</title>
+    <link rel="stylesheet" href="setting.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="setting-heading">
+        <div class="setting-logo">
+          <img
+            src="../images/idea.png"
+            height="90"
+            width="90"
+            alt=""
+            margin="auto"
+          />
+        </div>
+        <div class="setting-title">QuizVilla</div>
+        <div class="setting-text">
+          Settings
+          <span class="setting-icon">
+            <img src="../images/settings.png" alt="" />
+          </span>
+        </div>
+      </div>
+      <div class="setting-options">
+        <select class="btn option-item item1" name="Difficulty" id="Difficulty">
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+
+        <div class="btn option-item item2">
+          theme
+          <span class="theme">
+            <img class="themeIcon" src="../images/night-mode.png" alt="" />
+          </span>
+        </div>
+        <div class="btn option-item item3">
+          sound
+          <span class="sound">
+            <img src="../images/volume.png" alt="" />
+          </span>
+        </div>
+        <div class="btn option-item item4">
+          Music
+          <span class="music">
+            <img
+              class="background-music-icon"
+              src="../images/mute.png"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+      <audio id="backgroundMusic" loop>
+        <source
+          src="../sounds/ASIMI Duduke_(Official_Audio)(240p).mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="soundEffect">
+        <source src="../sounds/buttonClick.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <div id="okBtn" class="btn button-cont">
+        <button class="ok">OK</button>
+      </div>
+    </div>
+
+    <script src="setting.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+  color: #fff;
+}
+.avatar-header {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  width: 100%;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.avatar-title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  user-select: none;
+  color: rgba(43, 23, 43, 0.979);
+}
+.quit-btn {
+  background: rgba(43, 23, 43, 0.979);
+  border: 4px solid #fff;
+  margin-right: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 70px;
+  cursor: pointer;
+}
+.quit-btn:hover {
+  transform: scale(1.05);
+  background: rgba(78, 48, 78, 0.979);
+}
+.quit-btn:active {
+  transform: scale(1.1) translateX(3px) translateY(3px);
+}
+.avatars {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(20, 100px);
+  gap: 1rem;
+  height: auto;
+}
+
+.avatar-item {
+  background-color: rgba(43, 23, 43, 0.979);
+  border: 3px solid #fff;
+  border-radius: 50%;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 0.5rem; */
+}
+.avatar-item:hover {
+  background: rgba(70, 45, 70, 0.808);
+}
+.avatar-item:active {
+  transform: scale(1.05);
+  background: rgba(134, 94, 134, 0.616);
+}
+
+.dark {
+  background-color: rgb(2, 2, 39);
+}
+
+.avatar-title-color {
+  color: #fff;
+}
+
+.bodyBackground {
+  background-color: rgba(43, 23, 43, 0.979);
+}
+
+@media (min-width: 600px) {
+  .avatars {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(15, 100px);
+  }
+}
+@media (min-width: 780px) {
+  .avatars {
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(12, 100px);
+  }
+}
+@media (min-width: 1024px) {
+  .avatars {
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(10, 100px);
+  }
+}

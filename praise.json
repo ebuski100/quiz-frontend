@@ -1,0 +1,69 @@
+{
+  "praises": [
+    {
+      "id": 1,
+      "name": "audiences",
+      "path": "../resultMessage/audiences.gif",
+      "message": "Hurray!!"
+    },
+    {
+      "id": 2,
+      "name": "balloons",
+      "path": "../resultMessage/balloons (1).gif",
+      "message": "celebrate!"
+    },
+    {
+      "id": 3,
+      "name": "balloons",
+      "path": "../resultMessage/balloons.gif",
+      "message": "celebrate!"
+    },
+    {
+      "id": 4,
+      "name": "brofist",
+      "path": "../resultMessage/brofist.gif",
+      "message": "chop knuckle dude!"
+    },
+
+    {
+      "id": 7,
+      "name": "cheers",
+      "path": "../resultMessage/cheers.gif",
+      "message": "cheers to more Wins!"
+    },
+    {
+      "id": 8,
+      "name": "confetti",
+      "path": "../resultMessage/confetti.gif",
+      "message": "great job !"
+    },
+
+    {
+      "id": 9,
+      "name": "party",
+      "path": "../resultMessage/party.gif",
+      "message": "celebrate!"
+    },
+    {
+      "id": 10,
+      "name": "sun",
+      "path": "../resultMessage/sun.gif",
+      "message": "Amazing !"
+    }
+  ],
+
+  "failed": [
+    {
+      "id": 1,
+      "name": "why",
+      "path": "../resultMessage/why.gif",
+      "message": "oh! sorry, that's wrong"
+    },
+    {
+      "id": 2,
+      "name": "heartbroken",
+      "path": "../resultMessage/heartbroken.png",
+      "message": " Ouch! failed, try again"
+    }
+  ]
+}

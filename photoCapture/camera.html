@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera</title>
+    <link rel="stylesheet" href="camera.css" />
+  </head>
+  <body>
+    <div class="camera-container">
+      <video id="video" autoplay></video>
+      <div class="buttons-container">
+        <button class="btn" id="capture-button">Capture-profile</button>
+
+        <button class="btn" id="cancel-button">Cancel</button>
+      </div>
+
+      <canvas id="canvas" style="display: none"></canvas>
+    </div>
+    <audio id="backgroundMusic" loop>
+      <source
+        src="../sounds/ASIMI Duduke_(Official_Audio)(240p).mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="soundEffect">
+      <source src="../sounds/buttonClick.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="camera.js"></script>
+  </body>
+</html>

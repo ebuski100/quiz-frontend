@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding: 1rem;
+  color: blue;
+}
+
+.edit-container {
+  border: 8px solid rgb(0, 17, 255);
+  width: 90%;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+
+  overflow: hidden;
+  box-shadow: 0 4px 0 rgb(8, 8, 122);
+  background: #fff;
+}
+
+.edit-header {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: rgba(176, 190, 236, 0.438);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.edit-img-btn {
+  border: 3px solid #fff;
+  background: blue;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  bottom: -0.5rem;
+  left: -1.5rem;
+  position: absolute;
+}
+.image-avatar {
+  border: 5px solid blue;
+  border-radius: 50%;
+
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+}
+
+.image-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-edit-btn {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(0, 0, 230);
+  align-items: center;
+  padding: 0 1rem;
+  width: 110px;
+  border: 2px solid #e9e9e9e0;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.banner-edit-btn:hover,
+.quit-btn:hover,
+.edit-img-btn:hover {
+  background: rgb(67, 67, 240);
+}
+.banner-edit-btn:active,
+.quit-btn:active,
+.edit-img-btn:active {
+  transform: scale(1.1) translateX(3px) translateY(3px);
+}
+
+.quit-btn {
+  background-color: blue;
+  border-top: 5px ridge blue;
+  border-bottom: 5px groove blue;
+  border-right: 5px groove blue;
+  border-left: 5px ridge blue;
+  margin-right: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 70px;
+  cursor: pointer;
+}
+
+.edit-img {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.editImgBtnCont {
+  position: relative;
+
+  height: 100%;
+}
+.user-description {
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+.nickname {
+  display: block;
+  user-select: none;
+}
+.nickName {
+  border: none;
+  border-bottom: 1px solid blue;
+  width: 100%;
+  padding: 0 0.5rem;
+
+  outline: none;
+  font-family: cursive;
+  font-size: 1rem;
+}
+
+.user-data {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-age,
+.user-gender {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  position: relative;
+  border: 1px solid blue;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.submit {
+  padding: 0.5rem 2rem;
+  background-color: rgb(25, 238, 25);
+  border: 4px solid rgb(0, 231, 0);
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  box-shadow: 0 3px 3px inset, 3px 0 3px inset;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: rgba(6, 206, 6, 0.979);
+  border: 4px solid rgb(8, 172, 8);
+  box-shadow: 0 3px 3px inset, 3px 0 3px inset;
+}
+.submit:active {
+  box-shadow: 0 1px 0px rgba(48, 252, 21, 0.795);
+  transform: scale(1.1) translateX(5px) translateY(5px);
+}
+
+.button-cont {
+  text-align: center;
+  margin-top: 2rem;
+}
+.age,
+.gender {
+  margin-bottom: 1rem;
+  width: 100%;
+  user-select: none;
+  /* color: yellow; */
+  /* border-bottom: 1px solid blue; */
+}
+
+.select-age,
+.select-gender {
+  padding: 1rem 0;
+  outline: none;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.select-age:hover,
+.select-gender:hover {
+  text-underline-offset: 3px;
+  text-decoration: 3px solid blue underline;
+  color: blue;
+}
+
+/* modal-design */
+
+.modal,
+.modal1 {
+  display: none;
+  position: fixed;
+
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+  background-color: rgb(73, 69, 75);
+  margin: 10% auto;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+.modal-footer {
+  position: absolute;
+  /* border: 1px solid yellow; */
+  bottom: -3rem;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-family: cursive;
+  animation: fade-in-out 1s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-body-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  color: #fff;
+  padding-left: 10%;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+
+  /* border: 1px solid yellow; */
+}
+.modal-body-item:hover {
+  background: rgba(109, 108, 109, 0.89);
+  border-radius: 0.5rem;
+}
+.modal-header-title {
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.modal-body-item img {
+  margin-right: 1rem;
+}
+.modal-body-item div {
+  font-family: cursive;
+}
+.delete-text {
+  color: tomato;
+}
+
+.close {
+  /* color: red; */
+  position: absolute;
+  color: #fff;
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  transition: background 1s linear;
+}
+
+.close:hover {
+  background: grey;
+}
+
+.modal-body a {
+  text-decoration: none;
+}
+.modal-body a:visited {
+  text-decoration: none;
+}
+.dark {
+  background-color: rgb(2, 2, 39);
+}
+.headItems {
+  color: #fff;
+}
+
+.storeBtnBackground {
+  background-color: white;
+  color: rgb(2, 2, 39);
+  font-weight: bold;
+}
+.bodyColor {
+  color: #26a2f5;
+  font-weight: bold;
+}
+
+@media (min-width: 780px) {
+  .user-data {
+    flex-direction: row;
+  }
+  .edit-container {
+    width: 60%;
+  }
+}

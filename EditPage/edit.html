@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit-profile</title>
+    <link rel="stylesheet" href="edit.css" />
+  </head>
+  <body>
+    <div class="edit-container">
+      <div class="edit-header">
+        <div class="quit-btn editQuitBtn btn">
+          <img src="../images/left.png" alt="" />
+        </div>
+
+        <div class="btn banner-edit-btn">
+          <img src="../images/camera.png" alt="" />
+          <div class="edit-btn-txt">Edit</div>
+        </div>
+      </div>
+      <div class="edit-img">
+        <div class="image-avatar">
+          <img
+            src="../images/user (5).png"
+            id="chosen-image"
+            height="150"
+            width="150"
+            alt=""
+          />
+        </div>
+        <div class="editImgBtnCont">
+          <div class="btn edit-img-btn">
+            <img src="../images/camera.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="myModal">
+        <div class="btn close" id="close-pics-modal">&times;</div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="../images/idea.png" alt="" height="70" />
+            <div class="modal-header-title">Profile Picture</div>
+          </div>
+          <div class="modal-body">
+            <div class="btn modal-body-item choose-avatar">
+              <img src="../images/user (2).png" alt="" />
+              <div class="body-item-desc">Choose avatar</div>
+            </div>
+
+            <div id="profile-camera-btn" class="btn modal-body-item">
+              <img src="../images/camera (1).png" alt="" />
+              <div class="body-item-desc">Take Photo</div>
+            </div>
+
+            <div
+              id="profileGalleryBtn"
+              class="btn modal-body-item profileGallery"
+            >
+              <img src="../images/image.png" alt="" />
+              <div class="body-item-desc">Upload from Gallery</div>
+              <input
+                type="file"
+                id="profileGalleryInput"
+                accept="image/*"
+                style="display: none"
+                multiple
+              />
+            </div>
+            <div class="btn modal-body-item remove-profile-btn">
+              <img src="../images/delete.png" alt="" />
+              <div class="body-item-desc delete-text">Remove Picture</div>
+            </div>
+          </div>
+
+          <div class="modal-footer">Tap to Continue</div>
+        </div>
+      </div>
+      <div class="modal1" id="myModal1">
+        <div class="btn close" id="close-banner-modal">&times;</div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="../images/idea.png" alt="" height="70" />
+            <div class="modal-header-title">Profile Picture</div>
+          </div>
+          <div class="modal-body">
+            <div id="banner-camera-btn" class="btn modal-body-item">
+              <img src="../images/camera (1).png" alt="" />
+              <div class="body-item-desc">Take Photo</div>
+            </div>
+
+            <div
+              id="bannerGalleryBtn"
+              class="btn modal-body-item bannerGallery"
+            >
+              <img src="../images/image.png" alt="" />
+              <div class="body-item-desc">Upload from Gallery</div>
+              <input
+                type="file"
+                id="bannerGalleryInput"
+                accept="image/*"
+                style="display: none"
+                multiple
+              />
+            </div>
+            <div class="btn modal-body-item remove-banner-btn">
+              <img src="../images/delete.png" alt="" />
+              <div class="body-item-desc delete-text">Remove Picture</div>
+            </div>
+          </div>
+
+          <div class="modal-footer">Tap to Continue</div>
+        </div>
+      </div>
+      <audio id="backgroundMusic" loop>
+        <source
+          src="../sounds/ASIMI Duduke_(Official_Audio)(240p).mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="soundEffect">
+        <source src="../sounds/buttonClick.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="user-description">
+        <label for="nickname" class="nickname">Username:</label>
+        <input type="text" class="nickName usernameInput" />
+      </div>
+
+      <div class="user-data">
+        <div class="user-age">
+          <label for="age" class="age">Age</label> <br />
+          <select class="btn select-age" name="age" id="Age">
+            <option class="age-value" value="13">13</option>
+            <option class="age-value" value="14">14</option>
+            <option class="age-value" value="15">15</option>
+            <option class="age-value" value="16">16</option>
+            <option class="age-value" value="17">17</option>
+            <option class="age-value" value="18">18</option>
+            <option class="age-value" value="19">19</option>
+            <option class="age-value" value="20">20</option>
+            <option class="age-value" value="21">21</option>
+            <option class="age-value" value="22">22</option>
+            <option class="age-value" value="23">23</option>
+            <option class="age-value" value="24">24</option>
+            <option class="age-value" value="25">25</option>
+            <option class="age-value" value="26">26</option>
+            <option class="age-value" value="27">27</option>
+            <option class="age-value" value="28">28</option>
+            <option class="age-value" value="29">29</option>
+            <option class="age-value" value="30">30</option>
+            <option class="age-value" value="31">31</option>
+            <option class="age-value" value="32">32</option>
+            <option class="age-value" value="33">33</option>
+            <option class="age-value" value="34">34</option>
+            <option class="age-value" value="35">35</option>
+            <option class="age-value" value="36">36</option>
+            <option class="age-value" value="37">37</option>
+            <option class="age-value" value="38">38</option>
+            <option class="age-value" value="39">39</option>
+            <option class="age-value" value="40">40</option>
+            <option class="age-value" value="41">41</option>
+            <option class="age-value" value="42">42</option>
+            <option class="age-value" value="43">43</option>
+            <option class="age-value" value="44">44</option>
+            <option class="age-value" value="45">45</option>
+            <option class="age-value" value="46">46</option>
+            <option class="age-value" value="47">47</option>
+            <option class="age-value" value="48">48</option>
+            <option class="age-value" value="49">49</option>
+            <option class="age-value" value="50">50</option>
+            <option class="age-value" value="51">51</option>
+            <option class="age-value" value="52">52</option>
+            <option class="age-value" value="53">53</option>
+            <option class="age-value" value="54">54</option>
+            <option class="age-value" value="55">55</option>
+            <option class="age-value" value="56">56</option>
+            <option class="age-value" value="57">57</option>
+            <option class="age-value" value="58">58</option>
+            <option class="age-value" value="59">59</option>
+            <option class="age-value" value="60">60</option>
+          </select>
+        </div>
+        <!-- <div class="vertical"></div> -->
+        <div class="btn user-gender">
+          <label for="gender" class="gender">Gender</label><br />
+          <select class="select-gender" name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="btn button-cont">
+        <button class="submit">submit</button>
+      </div>
+    </div>
+    <script src="edit.js"></script>
+  </body>
+</html>

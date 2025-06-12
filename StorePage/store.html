@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Store</title>
+    <link rel="stylesheet" href="store.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="store-header">
+        <div class="quit-btn">
+          <img src="../images/left.png" alt="" />
+        </div>
+        <div class="header">
+          <div class="coins storeBtn">
+            <div class="coin-icon">
+              <img src="../images/coin.png" alt="" />
+            </div>
+            <div class="coin-num coin-num1 noCopy">100</div>
+            <div class="coinMax-cont">
+              <img src="../images/arrow-up.png" alt="">
+            </div>
+            <div class="coins-btn">
+              <img src="../images/add.png" alt="" height="40" />
+            </div>
+          </div>
+          <div class="heart storeBtn">
+            <div class="heart-icon">
+              <img src="../images/heart.png" alt="" height="20" width="20" />
+            </div>
+            <div class="heartnum coin-num1 noCopy">1</div>
+            <div class="heart-text heartMax-cont">
+              <img src="../images/arrow-up.png" alt="">
+            </div>
+            <div class="heart-btn">
+              <img src="../images/add.png" alt="" height="40" />
+            </div>
+          </div>
+          
+        </div>
+        <div class="share  invite btn">
+          <img src="../images/share.png" alt="share button" class="invite-img">
+          
+        </div>
+      </div>
+      <div class="storeDescription">
+        <div class="item noCopy">Items</div>
+        <div class="Price noCopy">Price</div>
+      </div>
+
+      <div class="store-main">
+        <div class="coins-showcase">
+          <div class="coin-header noCopy">
+            Coins
+            <img src="../images/coins.png" alt="" />
+          </div>
+         
+
+          <div
+            id="few-coinsAdBtn"
+            class="div-item getCoins noCopy btn watch-ad watchAd lives-option"
+          >
+            <img
+              src="../images/watch-movie (1).png"
+              class="lives-img ad-img"
+              alt=""
+            />
+            <div class="lives-desc">
+              <div class="lives-desc-header">Fair few coins</div>
+              <div class="lives-desc-txt coin-num">
+                <img src="../images/coin.png" height="20" alt="" />
+                200 per view
+              </div>
+            </div>
+            <div class="price watch-ad-price lives-price">
+              <img src="../images/watch-movie (1).png" height="20px" alt="" />
+              <div class="ad-txt">WATCH ADS</div>
+            </div>
+          </div>
+
+          <div
+            class="div-item noCopy heartBtn getCoins btn handful showcase coins-option"
+          >
+            <img
+              src="../images/coins.png"
+              class="coins-img handful-img"
+              alt=""
+            />
+            <div class="coin-desc">
+              <div class="coin-desc-header">Handful coins</div>
+              <div class="coin-num">
+                <img src="../images/coin.png" height="20" alt="" />
+                1000
+              </div>
+            </div>
+            <div class="price coins-price">
+              <img
+                src="../images/heart.png"
+                class="lives-img oneLife-img"
+                alt=""
+              />
+              <span class="coin-heartNum-opt">+1</span>
+            </div>
+          </div>
+
+          <div
+            class="div-item noCopy heartBtn getCoins btn heap showcase coins-option"
+          >
+            <img
+              src="../images/coins (1).png"
+              class="coins-img heap-img"
+              alt=""
+            />
+            <div class="coin-desc">
+              <div class="coin-desc-header">Heap of coins</div>
+              <div class="coin-num">
+                <img src="../images/coin.png" height="20" alt="" />
+                5000
+              </div>
+            </div>
+            <div class="price coins-price">
+              <img
+                src="../images/heart.png"
+                class="lives-img fullives-img"
+                alt=""
+              />
+              <span class="coin-heartNum-opt">
+                <img src="../images/arrow-up.png" height="16" alt="" />
+              </span>
+            </div>
+          </div>
+
+         
+        </div>
+
+
+
+        <div class="hints-showcase">
+          <div class="hints-header noCopy">
+            Hints & Time
+            <img src="../images/hint.png" alt="" />
+          </div>
+
+          <div
+            id="allHintsAdBtn"
+            class="div-item btn noCopy watch-ad getAHintBtn watchAd lives-option"
+          >
+            <img
+              src="../images/watch-movie (1).png"
+              class="lives-img ad-img"
+              alt=""
+            />
+            <div class="lives-desc">
+              <div class="lives-desc-header">Get a hint</div>
+            </div>
+            <div class="price watch-ad-price lives-price">
+              <img src="../images/watch-movie (1).png" height="16px" alt="" />
+              <div class="ad-txt">WATCH ADS</div>
+            </div>
+          </div>
+
+          <div
+            id="getAHintCoin"
+            class="div-item noCopy btn getAHintBtn showcase hint-option"
+          >
+            <img
+              src="../images/number-1.png"
+              class="hints-img all-hints-img"
+              alt=""
+            />
+            <div class="hints-desc all-hints-desc">Get A hint</div>
+            <div class="price hints-price">
+              <img src="../images/coin.png" height="20" alt="" />
+              1000
+            </div>
+          </div>
+
+          <div
+            id="allHintsCoin"
+            class="div-item btn noCopy all-hints showcase hint-option"
+          >
+            <img
+              src="../images/all.png"
+              class="hints-img all-hints-img"
+              alt=""
+            />
+            <div class="hints-desc all-hints-desc">All hints</div>
+            <div class="price hints-price">
+              <img src="../images/coin.png" height="20" alt="" />
+              3000
+            </div>
+          </div>
+
+          <div
+            id="ansTimeCoin"
+            class="div-item noCopy btn ans-time showcase hint-option"
+          >
+            <img
+              src="../images/clock.png"
+              class="hints-img ans-time-img"
+              alt=""
+            />
+            <div class="hints-desc">
+              <div class="hints-desc-header">Pause Answertime</div>
+              <div class="hints-desc-txt">5X per game</div>
+            </div>
+            <div class="price hints-price">
+              <img src="../images/coin.png" height="20" alt="" />
+              3000
+            </div>
+          </div>
+         
+
+        
+        <div class="adModal">
+          <div class="ad-contents">
+            <button
+              class="close-modal btn"
+              id="cancel-ad-btn"
+              style="display: none"
+            >
+              &times;
+            </button>
+            <video id="ad-video" autoplay></video>
+
+            <div id="play-pause-overlay">
+              <img
+                class="playPauseIcon"
+                src="../images/video-pause-button.png"
+                alt=""
+              />
+            </div>
+            <div class="video-timer">
+              <span id="currentTime">0:00</span>
+              <input
+                type="range"
+                name=""
+                id="progressBar"
+                value="0"
+                min="0"
+                max="100"
+                step="0.1"
+              />
+              <span id="totalDuration">0:00</span>
+            </div>
+            <div class="modal-footer">Tap to Continue</div>
+          </div>
+        </div>
+        <audio id="backgroundMusic" loop>
+          <source
+            src="../sounds/ASIMI Duduke_(Official_Audio)(240p).mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+
+        <audio id="soundEffect">
+          <source src="../sounds/buttonClick.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <div class="getAHintModal">
+          <div class="getAHintModalCont">
+            <div class="modalCloseBtn btn">&times;</div>
+            <div class="modal-content">
+              <img src="../images/idea.png" alt="" height="100" />
+              <div class="modal-text">Choose A Hint</div>
+
+              <div class="hintModalOption fifty-fifty noCopy btn">
+                <div class="hintOptionText fiftyPercentText">Fifty-Fifty</div>
+                <div class="hintImage fiftyHint">50%</div>
+              </div>
+              <div class="hintModalOption expertAns noCopy btn">
+                <div class="hintOptionText expertAnsText">Expert Answer</div>
+                <div class="hintImage">
+                  <img src="../images/user.png" alt="" />
+                </div>
+              </div>
+              <div class="hintModalOption anotherQuestion noCopy btn">
+                <div class="hintOptionText anotherQuestionText">
+                  Another Question
+                </div>
+                <div class="hintImage">
+                  <img src="../images/undo.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="home tooltip-box btn">
+            <img class="footer-btn" src="../images/home (1).png" alt="" />
+            <div class="tooltip">home</div>
+          </div>
+
+          <div class="profile tooltip-box btn">
+            <img class="footer-btn" src="../images/user.png" alt="" />
+            <div class="tooltip">profile</div>
+          </div>
+
+          <div class="setting-icon tooltip-box btn">
+            <img class="footer-btn" src="../images/settings.png" alt="" />
+            <div class="tooltip">setting</div>
+          </div>
+
+          <div class="store tooltip-box btn">
+            <img class="footer-btn" src="../images/grocery-store.png" alt="" />
+            <div class="tooltip">store</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="store.js"></script>
+  </body>
+</html>

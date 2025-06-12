@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding: 1rem;
+
+  /* height: 110vh; */
+}
+
+.noCopy {
+  user-select: none;
+}
+.storeDescription {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  background-color: purple;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  animation: blinking 1s linear infinite alternate-reverse;
+}
+@keyframes blinking {
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.container {
+  position: relative;
+  border: 6px solid blue;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  box-shadow: 0 4px 0 rgb(13, 13, 151);
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  padding-bottom: 5.5rem;
+}
+.div-item:hover,
+.quit-btn:hover {
+  transform: scale(1.05);
+}
+.div-item:active,
+.quit-btn:active {
+  transform: scale(1.1) translateX(2px) translateY(2px);
+}
+
+.store-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  margin-bottom: 1rem;
+}
+.quit-btn {
+  background-color: blue;
+  border-top: 5px ridge blue;
+  border-bottom: 5px groove blue;
+  border-right: 5px groove blue;
+  border-left: 5px ridge blue;
+  margin-right: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 70px;
+  cursor: pointer;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+}
+.coins,
+.heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #1b082e;
+  color: #fff;
+  border-radius: 1rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+
+  margin-right: 1rem;
+}
+
+.coins {
+  margin-bottom: 0.5rem;
+}
+
+.coin-icon img,
+.heart-icon img {
+  height: 1rem;
+  width: 1rem;
+}
+.heartnum,
+.coin-num {
+  left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.coin-icon,
+.heart-icon {
+  position: absolute;
+  border: none;
+  background-color: blue;
+  padding: 2px;
+  border-radius: 50%;
+  left: -5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coins-btn,
+.heart-btn {
+  position: absolute;
+  right: -5px;
+  display: flex;
+  align-items: center;
+}
+.coins-btn img,
+.heart-btn img {
+  height: 1.5rem;
+}
+
+.heartMax-cont,
+.coinMax-cont {
+  position: absolute;
+  right: -5px;
+  background: rgb(226, 84, 18);
+  color: #fff;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.heartMax-cont img,
+.coinMax-cont img {
+  height: 1rem;
+}
+
+.store-main {
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+
+.coins-showcase,
+.lives-showcase,
+.hints-showcase {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  /* border: 1px solid red; */
+}
+.coin-header,
+.lives-header,
+.hints-header {
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.lives-header-heartNum {
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+}
+.heartNum-opt {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  left: 1.5rem;
+}
+.coin-heartNum-opt {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 2rem;
+}
+
+.lives-option,
+.coins-option,
+.hint-option {
+  position: relative;
+}
+.coin-header {
+  background-color: rgb(53, 53, 255);
+}
+.lives-header {
+  background-color: rgb(161, 32, 161);
+}
+.hints-header {
+  background: tomato;
+  width: 100%;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  align-items: center;
+  height: 2.8rem;
+  width: 95%;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.watchAd {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  align-items: center;
+  height: 2.8rem;
+  width: 95%;
+  justify-content: space-between;
+  /* overflow: hidden; */
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.coins-option {
+  background: rgb(122, 245, 122);
+  border: 2px solid rgb(2, 240, 2);
+}
+.lives-option {
+  border: 2px solid purple;
+  background-color: rgb(216, 178, 216);
+}
+.hint-option {
+  border: 2px solid blue;
+  background: rgb(151, 191, 245);
+}
+
+.coins-img,
+.lives-img,
+.hints-img {
+  padding: 0 1rem;
+}
+.coin-desc,
+.lives-desc,
+.hints-desc {
+  width: 50%;
+  /* border: 1px solid yellow; */
+}
+.all-hints-desc {
+  display: flex;
+  align-items: center;
+}
+.hints-desc {
+  height: 100%;
+}
+.lives-desc-txt,
+.hints-desc-txt {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.coin-num {
+  /* border: 1px solid blue; */
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.coin-num1 {
+  animation: blink-orange 1s linear 2 alternate-reverse;
+}
+@keyframes blink-orange {
+  0%,
+  100% {
+    color: orange;
+    opacity: 1;
+  }
+  50% {
+    color: red;
+    font-size: 1.4rem;
+    opacity: 0.5;
+  }
+}
+.coin-num img {
+  margin-right: 0.5rem;
+}
+.price {
+  color: #fff;
+  box-shadow: 0 2px 2px inset, 2px 0 2px inset;
+  height: 100%;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invite {
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  background-color: blue;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgb(68, 67, 67);
+}
+.invite:hover {
+  transform: scale(1.05);
+}
+.invite:active {
+  transform: scale(1.1) translateX(2px) translateY(2px);
+}
+
+.invite img {
+  height: 1rem;
+}
+.coins-price {
+  background-color: rgb(12, 206, 12);
+  border: 1px solid rgb(12, 182, 6);
+}
+.lives-price {
+  background: rgb(226, 81, 245);
+
+  flex-direction: column;
+
+  font-size: 10px;
+  font-weight: bold;
+}
+.watch-ad-price {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  animation: blink 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+@keyframes blink {
+  100% {
+    transform: scale(1.15);
+  }
+}
+.hints-price {
+  background: rgb(15, 142, 228);
+}
+
+.store {
+  padding: 1rem;
+  background: rgb(167, 167, 167);
+  border-radius: 50%;
+}
+.footer img {
+  cursor: pointer;
+}
+
+.footer {
+  padding: 1rem 2rem;
+
+  width: 100%;
+  background: rgb(18, 18, 177);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+}
+.tooltip-box {
+  position: relative;
+}
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(9, 4, 85);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  /* border: none; */
+  position: absolute;
+
+  opacity: 0;
+  text-align: center;
+  bottom: -2rem;
+  left: -3rem;
+  transition: opacity 0.5s;
+}
+
+.tooltip-box:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer-btn:active {
+  transform: scale(1.2) translateX(3px) translateY(3px);
+}
+
+.adModal {
+  display: none;
+  position: fixed;
+
+  z-index: 100;
+  left: 0;
+  top: 0;
+
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.959);
+}
+.ad-contents {
+  margin: 5% auto;
+  background-color: rgba(100, 99, 100, 0.411);
+  padding: 0.5rem 0;
+  width: 90%;
+  height: 80%;
+
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+#ad-video {
+  height: 100%;
+  width: 100%;
+
+  display: block;
+  margin: 0;
+
+  object-fit: contain;
+  position: relative;
+}
+
+#play-pause-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-radius: 50%; */
+  padding: 0 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  display: none;
+  backdrop-filter: opacity(50%);
+}
+#play-pause-overlay img:hover {
+  transform: scale(1.1);
+}
+#play-pause-overlay img:active {
+  transform: scale(1.3) translateX(3px) translateY(3px);
+}
+.video-timer {
+  display: none;
+  color: #fff;
+}
+#progressBar {
+  width: 60%;
+  margin: 1rem;
+}
+
+.modal-footer {
+  position: absolute;
+
+  bottom: -4rem;
+  width: 100%;
+
+  color: #fff;
+  font-weight: bold;
+  font-family: cursive;
+  animation: fade-in-out 1s ease-in-out infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  color: red;
+  right: -2.5rem;
+  top: -2.5rem;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+  border: none;
+}
+
+.fiftyHint {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.close-modal:hover {
+  background: grey;
+}
+.dark {
+  background-color: rgb(2, 2, 39);
+}
+.storeBtnBackground {
+  background-color: white;
+  color: rgb(2, 2, 39);
+  font-weight: bold;
+}
+
+.displayMax {
+  visibility: visible;
+  z-index: 99;
+}
+
+.blink-coin {
+  animation: blink-coin 1s linear;
+}
+
+@keyframes blink-coin {
+  0%,
+  100% {
+    font-size: 12px;
+    opacity: 1;
+  }
+  50% {
+    color: rgb(206, 2, 2);
+    opacity: 0.5;
+  }
+}
+.getAHintModal {
+  display: none;
+  position: fixed;
+
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.959);
+}
+
+.getAHintModalCont {
+  background-color: rgb(73, 69, 75);
+  margin: 2% auto;
+  padding: 1rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+.modal-text {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hintModalOption {
+  display: flex;
+  flex-direction: row;
+
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+
+  justify-content: space-between;
+  height: 100px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.hintModalOption:hover {
+  transform: scale(1.05);
+}
+.hintModalOption:active {
+  transform: scale(1.1) translateX(3px) translateY(3px);
+}
+.hintImage {
+  display: flex;
+  align-items: start;
+}
+.hintOptionText {
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  font-weight: bold;
+}
+.usedUpItems {
+  color: red;
+  /* display: none; */
+  position: absolute;
+  top: 20%;
+}
+.anotherQuestion {
+  background-color: orange;
+}
+.expertAns {
+  background-color: rgb(75, 75, 238);
+}
+.fifty-fifty {
+  background-color: rgb(51, 252, 51);
+}
+.modalCloseBtn {
+  /* color: red; */
+  position: absolute;
+  color: #fff;
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* text-align: center; */
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s linear;
+}
+
+.modalCloseBtn:hover {
+  background: grey;
+}
+
+.disable {
+  pointer-events: none;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+  .footer {
+    padding: 1rem 4rem;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .coins {
+    margin-bottom: 0;
+  }
+}
