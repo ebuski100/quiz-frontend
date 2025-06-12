@@ -58,7 +58,7 @@ shareBtn.addEventListener("click", (event) => {
 //   },
 // };
 
-fetch(url, reqOptions)
+fetch("https://quiz-backend-2-wv4p.onrender.com")
   .then((response) => {
     console.log("Response Status:", response.status);
 
