@@ -58,14 +58,14 @@ shareBtn.addEventListener("click", (event) => {
 //   },
 // };
 
-fetch("https://quiz-backend-2-wv4p.onrender.com/api/facts")
-  .then((response) => {
-    console.log("Response Status:", response.status);
-    response.json();
-    return response.text().then((text) => {
+fetch("https://quiz-backend-2-wv4p.onrender.com/api/facts/")
+  .then((res) => {
+    console.log("Response Status:", res.status);
+    res.json();
+    return res.text().then((text) => {
       console.log("Response Body:", text); //
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
       }
       return JSON.parse(text);
     });
